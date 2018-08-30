@@ -27,9 +27,11 @@ export default {
 }
 </script>
 
-<style>
+<style lang="scss">
+@import url(//fonts.googleapis.com/earlyaccess/notosanstc.css);
 #app {
   display: flex;
   flex-direction: column;
+  font-family: 'Noto Sans TC', sans-serif;
 }
 </style>

@@ -19,6 +19,6 @@ export default {
 
 <style lang="scss" scoped>
 .header-wrapper {
-  
+
 }
 </style>
