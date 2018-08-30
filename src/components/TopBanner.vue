@@ -1,7 +1,7 @@
 <template>
   <div class="head-wrapper">
     <div class="nav">
-      <div class="logo"></div>
+      <div class="logo">Biopro A+</div>
       <div class="nav-option">Program</div>
       <div class="nav-option">Speakers</div>
       <div class="nav-option">Call for Posters</div>
@@ -19,6 +19,12 @@ export default {
 
 <style lang="scss" scoped>
 .header-wrapper {
-
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  .nav {
+    display: flex;
+    flex-direction: row;
+  }
 }
 </style>

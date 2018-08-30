@@ -33,5 +33,6 @@ export default {
   display: flex;
   flex-direction: column;
   font-family: 'Noto Sans TC', sans-serif;
+  width: 100vw;
 }
 </style>
