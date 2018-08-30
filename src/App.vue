@@ -11,11 +11,15 @@ export default {
 </script>
 
 <style lang="scss">
-@import url(//fonts.googleapis.com/earlyaccess/notosanstc.css);
+@import url('https://fonts.googleapis.com/css?family=Open+Sans');
 #app {
   display: flex;
   flex-direction: column;
-  font-family: 'Noto Sans TC', sans-serif;
+  font-family: 'Open Sans', sans-serif;
   width: 100vw;
+}
+html, body {
+  margin: 0;
+  padding: 0;
 }
 </style>
