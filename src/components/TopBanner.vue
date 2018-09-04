@@ -23,6 +23,7 @@
         <div class="line"></div>
         <span>Bio-electronics</span>
       </div>
+      <div class="btn-register">Register</div>
     </div>
     <div class="map-block">
       <iframe width="100%" height="70%" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://www.openstreetmap.org/export/embed.html?bbox=120.98391294479372%2C24.78800079239005%2C121.00537061691284%2C24.802571482206947&amp;layer=mapnik&amp;marker=24.795282774950017%2C120.99464672617614"></iframe>
@@ -108,18 +109,32 @@ export default {
       flex-direction: row;
       justify-content: space-between;
       font-size: 1.2em;
+      margin-bottom: 10px;
     }
     .below-text {
       display: flex;
       flex-direction: row;
       justify-content: space-between;
       font-size: .8em;
+      margin-bottom: 20px;
       .line {
         width: 1px;
         height: 15px;
         background: rgb(107, 151, 255);
         margin: 0 20px;
       }
+    }
+    .btn-register {
+      width: 110px;
+      height: 40px;
+      background-color: #fff;
+      border-radius: 10px;
+      color: rgb(0, 151, 255);
+      font-size: .8em;
+
+      display: flex;
+      align-items: center;
+      justify-content: center;
     }
   }
   .map-block {
