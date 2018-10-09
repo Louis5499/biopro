@@ -27,7 +27,7 @@ export default {
     return {
       speakers: [
         {
-          avatarUrl: '@/assets/avatar_1.jpg',
+          avatarUrl: '../static/avatar_1.jpg',
           name: `Prof. Sheng-Yu Peng`,
           brief: `Department of Electrical Engineering in National Taiwan University of Science and Technology`,
           link: {
@@ -36,7 +36,7 @@ export default {
           }
         },
         {
-          avatarUrl: '@/assets/avatar_1.jpg',
+          avatarUrl: '../static/avatar_1.jpg',
           name: `Prof. Sheng-Yu Peng`,
           brief: `Department of Electrical Engineering in National Taiwan University of Science and Technology`,
           link: {
