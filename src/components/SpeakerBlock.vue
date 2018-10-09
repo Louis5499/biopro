@@ -14,17 +14,25 @@
             <img src="@/assets/icon_website.svg" width="20px"/>
             <span class="link-body">{{speaker.link.content}}</span>
           </div>
-          <div class="more-button">More</div>
+          <div class="more-button" @click="modalShow = 1">More</div>
         </div>
       </div>
     </div>
+    <Modal v-if="modalShow !== 0" @displayReset="modalShow = 0">
+      <ProfessorOne v-if="modalShow === 1"/>
+    </Modal>
   </div>
 </template>
 
 <script>
+import Modal from './Modal';
+import ProfessorOne from './modalComs/ProfessorOne';
+
 export default {
+  components: { Modal, ProfessorOne },
   data() {
     return {
+      modalShow: 0,
       speakers: [
         {
           avatarUrl: '../static/avatar_1.jpg',
@@ -114,6 +122,12 @@ export default {
           padding: 8px 15px;
           border: #666 1px solid;
           width: fit-content;
+          cursor: pointer;
+          transition: .1s all linear;
+          &:hover {
+            background-color: #666;
+            color: white;
+          }
         }
       }
     }
