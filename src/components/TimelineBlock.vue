@@ -188,7 +188,7 @@ $gray: #e6e6e6;
 
 @media all and (min-width: 1220px) {
   .timeline-wrapper {
-    font-size: 1.5em;
+    font-size: 1.2em;
   }
 }
 </style>

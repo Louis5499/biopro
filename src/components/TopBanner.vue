@@ -4,10 +4,10 @@
     <div class="nav">
       <div class="logo">Biopro A+</div>
       <div class="option-wrapper">
-        <div class="nav-option">Program</div>
-        <div class="nav-option">Speakers</div>
-        <div class="nav-option">Call for Posters</div>
-        <div class="nav-option">Location</div>
+        <div class="nav-option" @click="smoothScroll(0)">Timeline</div>
+        <div class="nav-option" @click="smoothScroll(1)">Speakers</div>
+        <div class="nav-option" @click="smoothScroll(2)">Call for Posters</div>
+        <div class="nav-option" @click="smoothScroll(3)">Location</div>
         <div class="nav-option register">Register</div>
       </div>
     </div>
@@ -41,12 +41,33 @@
 <script>
 export default {
   data() {
-    return {}
+    return {
+      topicOffset: []
+    }
   },
   methods: {
     pictureBgCss(img) {
       return { 'background-image': 'url(' + img + ')' };
+    },
+    smoothScroll(elementId) {
+      const offset = this.topicOffset[elementId];
+      window.scroll({
+        top: offset, 
+        left: 0, 
+        behavior: 'smooth' 
+      });
     }
+  },
+  mounted() {
+    const calcElementHeight = () => {
+      this.topicOffset[0] = document.querySelector('.timeline-wrapper').offsetTop;
+      this.topicOffset[1] = document.querySelector('.speaker-wrapper').offsetTop;
+      this.topicOffset[2] = document.querySelector('.poster-wrapper').offsetTop;
+      this.topicOffset[3] = document.querySelector('.location-wrapper').offsetTop;
+    }
+    // Initialize first time
+    calcElementHeight();
+    window.onresize = calcElementHeight;
   }
 }
 </script>
@@ -87,9 +108,20 @@ export default {
         display: flex;
         align-items: center;
         justify-content: center;
+        transition: all .1s ease;
+        position: relative;
         &.register {
           border: 1px solid white;
           border-radius: 5px;
+          &:hover {
+            background-color: white;
+            color: rgb(107, 151, 255);
+            opacity: 1;
+          }
+        }
+        &:hover {
+          opacity: .9;
+          top: 1px;
         }
       }
     }
@@ -135,6 +167,7 @@ export default {
       display: flex;
       align-items: center;
       justify-content: center;
+      cursor: pointer;
     }
   }
   .map-block {
@@ -171,6 +204,11 @@ export default {
         }
       }
     }
+  }
+}
+@media all and (min-width: 1220px) {
+  .head-wrapper {
+    font-size: 1.2em;
   }
 }
 </style>
