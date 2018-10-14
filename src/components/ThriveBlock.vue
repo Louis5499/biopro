@@ -1,5 +1,5 @@
 <template>
-  <el-row class="row-wrapper" :gutter="20">
+  <el-row class="row-wrapper" :gutter="20" type="flex" align="middle">
     <el-col :span="10">
       <div class="text-header">
         <img src="@/assets/icon_people.svg" />
@@ -49,6 +49,11 @@ export default {
       color: #7e7e7e;
       line-height: 1.5em;
     }
+  }
+}
+@media all and (min-width: 1220px) {
+  .row-wrapper {
+    font-size: 1.2em;
   }
 }
 </style>
