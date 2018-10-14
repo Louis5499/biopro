@@ -79,16 +79,17 @@ export default {
   }
   .content {
     display: flex;
-    flex-direction: column;
-    align-items: center;
+    justify-content: center;
+    width: 100vw;
+    flex-wrap: wrap;
     .speaker-block {
       display: flex;
       flex-direction: row;
       align-items: center;
       justify-content: center;
-      width: 85%;
+      max-width: 680px;
       box-shadow: 0px 1px 10px rgba(#666,.3);
-      margin: 30px 0;
+      margin: 30px 30px;
       .speaker-avatar {
         width: 150px;
         height: 150px;

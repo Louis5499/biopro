@@ -81,4 +81,16 @@ export default {
     }
   }
 }
+
+@media all and (max-width: 890px) {
+  .poster-wrapper {
+    font-size: .8em;
+  }
+}
+
+@media all and (min-width: 1280px) {
+  .poster-wrapper {
+    font-size: 1.3em;
+  }
+}
 </style>

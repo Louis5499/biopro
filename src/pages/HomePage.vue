@@ -4,6 +4,7 @@
     <ThriveBlock />
     <TimelineBlock />
     <SpeakerBlock />
+    <AgendaBlock />
     <PosterBlock />
     <LocationBlock />
     <SponserBlock />
@@ -15,13 +16,14 @@ import TopBanner     from '@/components/TopBanner';
 import ThriveBlock   from '@/components/ThriveBlock';
 import TimelineBlock from '@/components/TimelineBlock';
 import SpeakerBlock  from '@/components/SpeakerBlock';
+import AgendaBlock   from '@/components/AgendaBlock';
 import PosterBlock   from '@/components/PosterBlock';
 import LocationBlock from '@/components/LocationBlock';
 import SponserBlock  from '@/components/SponserBlock';
 
 export default {
   components: {
-    TopBanner, ThriveBlock, TimelineBlock, SpeakerBlock, PosterBlock, LocationBlock, SponserBlock
+    TopBanner, ThriveBlock, TimelineBlock, SpeakerBlock, AgendaBlock, PosterBlock, LocationBlock, SponserBlock
   }
 }
 </script>
