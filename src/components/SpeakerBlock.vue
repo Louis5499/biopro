@@ -134,5 +134,12 @@ export default {
     }
   }
 }
+@media all and (min-width: 1220px) {
+  .speaker-wrapper {
+    .header {
+      font-size: 1.2em;
+    }
+  }
+}
 </style>
 

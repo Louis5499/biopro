@@ -4,7 +4,7 @@
     <ThriveBlock />
     <TimelineBlock />
     <SpeakerBlock />
-    <AgendaBlock />
+    <!-- <AgendaBlock /> -->
     <PosterBlock />
     <LocationBlock />
     <SponserBlock />
@@ -29,5 +29,8 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-
+.wrapper {
+  overflow: hidden;
+  width: 100vw;
+}
 </style>

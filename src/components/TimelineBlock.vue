@@ -1,8 +1,8 @@
 <template>
   <div class="timeline-wrapper">
     <div class="header">
-      <img src="@/assets/icon_clock.svg" width="30px"/>
-      <h2 class="title">Timeline</h2>
+      <img src="@/assets/icon_agenda.svg" width="30px" />
+      <h2 class="title">Agenda</h2>
     </div>
     <div class="content">
       <div class="calender" v-for="(calender, idx) in calenders" :key="idx">

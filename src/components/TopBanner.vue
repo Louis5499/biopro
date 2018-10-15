@@ -4,7 +4,7 @@
     <div class="nav">
       <div class="logo">Biopro A+</div>
       <div class="option-wrapper">
-        <div class="nav-option" @click="smoothScroll(0)">Timeline</div>
+        <div class="nav-option" @click="smoothScroll(0)">Agenda</div>
         <div class="nav-option" @click="smoothScroll(1)">Speakers</div>
         <div class="nav-option" @click="smoothScroll(2)">Call for Posters</div>
         <div class="nav-option" @click="smoothScroll(3)">Location</div>
@@ -25,8 +25,9 @@
       </div>
       <div class="btn-register">Register</div>
     </div>
-    <div class="map-block">
-      <iframe width="100%" height="70%" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://www.openstreetmap.org/export/embed.html?bbox=120.98391294479372%2C24.78800079239005%2C121.00537061691284%2C24.802571482206947&amp;layer=mapnik&amp;marker=24.795282774950017%2C120.99464672617614"></iframe>
+    <div class="map-block" @click="smoothScroll(3)">
+      <img width="100%" src="@/assets/header_map.png" />
+      <!-- <iframe width="100%" height="70%" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://www.openstreetmap.org/export/embed.html?bbox=120.98391294479372%2C24.78800079239005%2C121.00537061691284%2C24.802571482206947&amp;layer=mapnik&amp;marker=24.795282774950017%2C120.99464672617614"></iframe> -->
       <div class="below-block">
         <img class="arrow" src="@/assets/right_arrow.svg"/>
         <div class="inner-text-block">
@@ -168,12 +169,17 @@ export default {
       align-items: center;
       justify-content: center;
       cursor: pointer;
+      transition: all ease .2s;
+
+      &:hover {
+        background-color: rgba(#fff, .9);
+      }
     }
   }
   .map-block {
     z-index: 1;
     width: 20vw;
-    height: 27vw;
+    height: 23vw;
     background: white;
     border-radius: 5px;
     box-shadow: 1px 1px rgba(#1c1c1c, .5);
@@ -197,7 +203,7 @@ export default {
         color: #7c7c7c;
         display: flex;
         flex-direction: column;
-        font-size: 2.2em;
+        font-size: 2em;
         letter-spacing: 2px;
         span:nth-child(1) {
           font-size: .7em;
@@ -208,6 +214,9 @@ export default {
 }
 @media all and (min-width: 1220px) {
   .head-wrapper {
+    font-size: 1.2em;
+  }
+  .map-block {
     font-size: 1.2em;
   }
 }
