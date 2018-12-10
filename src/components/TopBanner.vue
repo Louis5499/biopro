@@ -3,13 +3,23 @@
     <img class="background" src="@/assets/top_banner_bg.svg">
     <div class="nav">
       <div class="logo">Biopro A+</div>
-      <div class="option-wrapper">
+      <div class="option-wrapper navDesktop">
         <div class="nav-option" @click="smoothScroll(0)">Agenda</div>
         <div class="nav-option" @click="smoothScroll(1)">Speakers</div>
         <div class="nav-option" @click="smoothScroll(2)">Call for Posters</div>
         <div class="nav-option" @click="smoothScroll(3)">Location</div>
         <div class="nav-option register">Register</div>
       </div>
+      <el-dropdown class="navMobile" trigger="click" @command="smoothScroll">
+        <el-button circle icon ="el-icon-arrow-down" class="el-dropdown-link"></el-button>
+        <el-dropdown-menu slot="dropdown">
+          <el-dropdown-item :command="0">Agenda</el-dropdown-item>
+          <el-dropdown-item :command="1">Speakers</el-dropdown-item>
+          <el-dropdown-item :command="2">Call for Posters</el-dropdown-item>
+          <el-dropdown-item :command="3">Location</el-dropdown-item>
+          <el-dropdown-item>Register</el-dropdown-item>
+        </el-dropdown-menu>
+      </el-dropdown>
     </div>
     <div class="text-block">
       <div class="upper-text">
@@ -17,15 +27,16 @@
         <span>2019 International Workshop</span>
       </div>
       <div class="below-text">
-        <span>Bio-inspired Systems</span>
+        <!-- <span>Bio-inspired Systems</span>
         <div class="line"></div>
         <span>Machine Intelligence</span>
         <div class="line"></div>
-        <span>Bio-electronics</span>
+        <span>Bio-electronics</span> -->
+        <span>Machine intelligence for bio-electronic medicine</span>
       </div>
-      <div class="btn-register">Register</div>
+      <div class="btn-register navDesktop">Register</div>
     </div>
-    <div class="map-block" @click="smoothScroll(3)">
+    <div class="map-block navDesktop" @click="smoothScroll(3)">
       <img width="100%" src="@/assets/header_map.png" />
       <!-- <iframe width="100%" height="70%" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://www.openstreetmap.org/export/embed.html?bbox=120.98391294479372%2C24.78800079239005%2C121.00537061691284%2C24.802571482206947&amp;layer=mapnik&amp;marker=24.795282774950017%2C120.99464672617614"></iframe> -->
       <div class="below-block">
@@ -43,7 +54,8 @@
 export default {
   data() {
     return {
-      topicOffset: []
+      topicOffset: [],
+      isCollapse: true
     }
   },
   methods: {
@@ -129,6 +141,7 @@ export default {
   }
   .text-block {
     z-index: 1;
+    max-width: 660px;
     width: 54%;
     display: flex;
     flex-direction: column;
@@ -218,6 +231,38 @@ export default {
   }
   .map-block {
     font-size: 1.2em;
+  }
+}
+
+@media all and (max-width: 980px) {
+  .head-wrapper {
+    .text-block {
+      font-size: 1.25em;
+    }
+  }
+  .below-block {
+    font-size: .8em;
+    img {
+      margin-right: 10% !important;
+    }
+  }
+}
+
+
+@media all and (min-width: 780px) {
+  .navMobile {
+    display: none;
+  }
+}
+@media all and (max-width: 780px) {
+  .navDesktop {
+    display: none !important;
+  }
+  .head-wrapper {
+    .text-block {
+      width: 80%;
+      max-width: 80%;
+    }
   }
 }
 </style>

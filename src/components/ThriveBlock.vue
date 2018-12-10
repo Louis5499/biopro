@@ -1,6 +1,6 @@
 <template>
-  <el-row class="row-wrapper" :gutter="20" type="flex" align="middle">
-    <el-col :span="10">
+  <div class="row-wrapper">
+    <div class="left-panel">
       <div class="text-header">
         <img src="@/assets/icon_people.svg" />
         <h2>Thrive & Prosper</h2>
@@ -9,16 +9,16 @@
         <p>In 2017, the BioPro A+ Platform has funded more students to work with world-leading experts in bio-inspired systems, bio-electronics and machine intelligence.</p>
         <p>In this exciting event, we would like to share our experience and joy with you, as well as to provide the opportunity for you to interact with international researchers and students in related fields.</p>
       </div>
-    </el-col>
-    <el-col :span="14">
+    </div>
+    <div class="right-panel">
       <el-carousel :interval="4000" type="card" height="300px">
         <el-carousel-item><img height="100%" src="@/assets/img_1.png"/></el-carousel-item>
         <el-carousel-item><img height="100%" src="@/assets/img_2.png"/></el-carousel-item>
         <el-carousel-item><img height="100%" src="@/assets/img_3.png"/></el-carousel-item>
         <el-carousel-item><img height="100%" src="@/assets/img_4.png"/></el-carousel-item>
       </el-carousel>
-    </el-col>
-  </el-row>
+    </div>
+  </div>
 </template>
 
 <script>
@@ -29,7 +29,16 @@ export default {
 
 <style lang="scss" scoped>
 .row-wrapper {
-  padding: 0 10%;
+  padding: 0 8%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  .left-panel {
+    width: 50%;
+  }
+  .right-panel {
+    width: 50%;
+  }
   .text-header {
     display: flex;
     flex-direction: row;
@@ -54,6 +63,20 @@ export default {
 @media all and (min-width: 1220px) {
   .row-wrapper {
     font-size: 1.2em;
+  }
+}
+@media all and (max-width: 1000px) {
+  .row-wrapper {
+    flex-direction: column;
+    .text-header {
+      justify-content: center;
+    }
+    .left-panel {
+      width: 100%;
+    }
+    .right-panel {
+      width: 100%;
+    }
   }
 }
 </style>
