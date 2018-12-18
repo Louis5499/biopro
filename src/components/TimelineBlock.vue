@@ -14,7 +14,7 @@
         </div>
         <div class="body row" v-for="(row, idx) in calender.body" :key="idx">
           <div class="left-panel">
-            <span>{{row.timeline}}</span>
+            <span style="text-align: center">{{row.timeline}}</span>
             <div v-if="row.tag">{{row.tag}}</div>
           </div>
           <div class="right-panel">
@@ -189,6 +189,11 @@ $gray: #e6e6e6;
 @media all and (min-width: 1220px) {
   .timeline-wrapper {
     font-size: 1.2em;
+  }
+}
+@media all and (max-width: 580px) {
+  .timeline-wrapper {
+    font-size: .8em;
   }
 }
 </style>

@@ -141,5 +141,17 @@ export default {
     }
   }
 }
+@media all and (max-width: 630px) {
+  .speaker-block {
+    flex-direction: column !important;
+    .speaker-avatar {
+      margin: 20px 0 0 0;
+    }
+    .speaker-content {
+      margin: 0 !important;
+      width: 80% !important;
+    }
+  }
+}
 </style>
 

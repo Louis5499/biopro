@@ -3,14 +3,7 @@
     <img class="background" src="@/assets/top_banner_bg.svg">
     <div class="nav">
       <div class="logo">Biopro A+</div>
-      <div class="option-wrapper navDesktop">
-        <div class="nav-option" @click="smoothScroll(0)">Agenda</div>
-        <div class="nav-option" @click="smoothScroll(1)">Speakers</div>
-        <div class="nav-option" @click="smoothScroll(2)">Call for Posters</div>
-        <div class="nav-option" @click="smoothScroll(3)">Location</div>
-        <div class="nav-option register">Register</div>
-      </div>
-      <el-dropdown class="navMobile" trigger="click" @command="smoothScroll">
+      <el-dropdown class="navMobile dropdown-menu" trigger="click" @command="smoothScroll">
         <el-button circle icon ="el-icon-arrow-down" class="el-dropdown-link"></el-button>
         <el-dropdown-menu slot="dropdown">
           <el-dropdown-item :command="0">Agenda</el-dropdown-item>
@@ -20,6 +13,13 @@
           <el-dropdown-item>Register</el-dropdown-item>
         </el-dropdown-menu>
       </el-dropdown>
+      <div class="option-wrapper">
+        <div class="nav-option navDesktop" @click="smoothScroll(0)">Agenda</div>
+        <div class="nav-option navDesktop" @click="smoothScroll(1)">Speakers</div>
+        <div class="nav-option navDesktop" @click="smoothScroll(2)">Call for Posters</div>
+        <div class="nav-option navDesktop" @click="smoothScroll(3)">Location</div>
+        <div class="nav-option register">Register</div>
+      </div>
     </div>
     <div class="text-block">
       <div class="upper-text">
@@ -107,6 +107,7 @@ export default {
     width: 88%;
     color: white;
     margin-top: 30px;
+    position: relative;
     .logo {
       font-size: 2em;
     }
@@ -137,6 +138,10 @@ export default {
           top: 1px;
         }
       }
+    }
+    .dropdown-menu {
+      position: absolute;
+      right: 150px;
     }
   }
   .text-block {
@@ -176,7 +181,7 @@ export default {
       background-color: #fff;
       border-radius: 10px;
       color: rgb(0, 151, 255);
-      font-size: .8em;
+      font-size: .7em;
 
       display: flex;
       align-items: center;
@@ -210,7 +215,7 @@ export default {
       justify-content: center;
       img {
         height: 30%;
-        margin-right: 40px;
+        margin-right: 10%;
       }
       .inner-text-block {
         color: #7c7c7c;
@@ -249,12 +254,12 @@ export default {
 }
 
 
-@media all and (min-width: 780px) {
+@media all and (min-width: 895px) {
   .navMobile {
     display: none;
   }
 }
-@media all and (max-width: 780px) {
+@media all and (max-width: 895px) {
   .navDesktop {
     display: none !important;
   }
@@ -263,6 +268,16 @@ export default {
       width: 80%;
       max-width: 80%;
     }
+  }
+}
+@media all and (max-width: 530px) {
+  .text-block {
+    .upper-text {
+      display: none !important;
+    }
+  }
+  .dropdown-menu {
+    display: none;
   }
 }
 </style>
