@@ -4,11 +4,19 @@
       <img src="@/assets/icon_agenda.svg" width="30px" />
       <h2 class="title">Agenda</h2>
     </div>
-    <el-button-group class="select-bar">
-      <el-button type="primary" @click="currentSelect = 1" :plain="!isSelected(1)">3/14 (四)</el-button>
-      <el-button type="primary" @click="currentSelect = 2" :plain="!isSelected(2)">3/15 (五)</el-button>
-      <el-button type="primary" @click="currentSelect = 3" :plain="!isSelected(3)">3/16 (六)</el-button>
-      <el-button type="primary" @click="currentSelect = 4" :plain="!isSelected(4)">3/17 (日)</el-button>
+    <el-button-group class="select-bar desktop">
+      <el-button type="primary" @click="currentSelect = 1" :plain="!isSelected(1)">3/14 (Thu)</el-button>
+      <el-button type="primary" @click="currentSelect = 2" :plain="!isSelected(2)">3/15 (Fri)</el-button>
+      <el-button type="primary" @click="currentSelect = 3" :plain="!isSelected(3)">3/16 (Sat)</el-button>
+      <el-button type="primary" @click="currentSelect = 4" :plain="!isSelected(4)">3/17 (Sun)</el-button>
+    </el-button-group>
+    <el-button-group class="select-bar mobile">
+      <el-button type="primary" @click="currentSelect = 1" :plain="!isSelected(1)">3/14 (Thu)</el-button>
+      <el-button type="primary" @click="currentSelect = 2" :plain="!isSelected(2)">3/15 (Fri)</el-button>
+    </el-button-group>
+    <el-button-group class="select-bar mobile">
+      <el-button type="primary" @click="currentSelect = 3" :plain="!isSelected(3)">3/16 (Sat)</el-button>
+      <el-button type="primary" @click="currentSelect = 4" :plain="!isSelected(4)">3/17 (Sun)</el-button>
     </el-button-group>
     <div class="content">
       <div v-if="currentSelect === idx+1" class="calender" v-for="(calender, idx) in calenders" :key="idx">
@@ -165,9 +173,25 @@ $gray: #e6e6e6;
     font-size: 1.2em;
   }
 }
+
+@media all and (min-width: 580px) {
+  .mobile {
+    display: none;
+  }
+}
+
 @media all and (max-width: 580px) {
   .timeline-wrapper {
     font-size: .8em;
+  }
+  .desktop {
+    display: none;
+  }
+  .el-button-group {
+    margin: 5px 0;
+    .el-button {
+      width: calc(100% / 2) !important;
+    }
   }
 }
 </style>

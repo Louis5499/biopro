@@ -19,7 +19,7 @@ export default [
       },
       {
         timeline: '10:10 - 10:30',
-        tag: 'Presentation',
+        tag: 'Student',
         title: `Deep Learning in Biometrics`,
         content: `Wen-Chi, Chin, Aoki Laboratory, Tohoku University, Japan` 
       },
@@ -36,7 +36,7 @@ export default [
       },
       {
         timeline: '11:40 - 12:00',
-        tag: 'Presentation',
+        tag: 'Student',
         title: `Deep Learning in Biometrics`,
         content: `Yi-Chun, Lin, Aoki Laboratory, Tohoku University, Japan` 
       },
@@ -52,13 +52,13 @@ export default [
       },
       {
         timeline: '14:20 - 14:40',
-        tag: 'Presentation',
+        tag: 'Student',
         title: `Build and use a haptic mouse`,
         content: `Kao Wei-Tse Institute of Neuro-informatics, University of Zurich and ETH Zurich`
       },
       {
         timeline: '14:40 - 15:00',
-        tag: 'Presentation',
+        tag: 'Student',
         title: `Build and use a haptic mouse`,
         content: `Kao Wei-Tse Institute of Neuro-informatics, University of Zurich and ETH Zurich`
       },
@@ -79,7 +79,7 @@ export default [
       },
       {
         timeline: '10:10 - 10:30',
-        tag: 'Presentation',
+        tag: 'Student',
         title: `Software development and signal processing for high throughput silicon multi-electrode array systems`,
         content: `SHUO-WEN,CHANG, IMEC` 
       },
@@ -96,7 +96,7 @@ export default [
       },
       {
         timeline: '11:40 - 12:00',
-        tag: 'Presentation',
+        tag: 'Student',
         title: `Software development and signal processing for high throughput silicon multi-electrode array systems`,
         content: `LO,YU-FAN , IMEC` 
       },
@@ -112,13 +112,13 @@ export default [
       },
       {
         timeline: '14:20 - 14:40',
-        tag: 'Presentation',
+        tag: 'Student',
         title: `Develop a Brain Computer Interface`,
         content: `WEI-CHIAO CHANG School of Computer Science and Engineering Nanyang Technological University`
       },
       {
         timeline: '14:40 - 15:00',
-        tag: 'Presentation',
+        tag: 'Student',
         title: `Develop a Brain Computer Interface`,
         content: `Heng-An,Tzou School of Computer Science and Engineering Nanyang Technological University`
       },
@@ -139,7 +139,7 @@ export default [
       },
       {
         timeline: '10:10 - 10:30',
-        tag: 'Presentation',
+        tag: 'Student',
         title: `Neuromorphic Engineering and Neuro-prosthesis`,
         content: `HOU, KUAN-WEI Singapore Institute for Neuro-technology, National University of Singapore` 
       },
@@ -156,7 +156,7 @@ export default [
       },
       {
         timeline: '11:40 - 12:00',
-        tag: 'Presentation',
+        tag: 'Student',
         title: `LAI,WU-HSUN Singapore Institute for Neuro-technology, National University of Singapore`,
         content: `Neuromorphic Engineering and Neuro-prosthesis` 
       },
@@ -172,13 +172,13 @@ export default [
       },
       {
         timeline: '14:20 - 14:40',
-        tag: 'Presentation',
+        tag: 'Student',
         title: `LIN, SHANG-MIN Singapore Institute for Neuro-technology, National University of Singapore`,
         content: `Nano Neuro Photonics (Technical team)`
       },
       {
         timeline: '14:40 - 15:00',
-        tag: 'Presentation',
+        tag: 'Student',
         title: `Learning spiking neural networks based of memristive devices`,
         content: `Yi-Chuan, Chang IMS Laboratory – AS2N group. University of Bordeaux`
       },
@@ -199,7 +199,7 @@ export default [
       },
       {
         timeline: '10:10 - 10:30',
-        tag: 'Presentation',
+        tag: 'Student',
         title: `Contribution to a software simulation tool for automated regulation of glycaemia in the case of diabetic patient`,
         content: `HSIN-JOU SHEN IMS Laboratory – AS2N group. University of Bordeaux` 
       },
@@ -216,7 +216,7 @@ export default [
       },
       {
         timeline: '11:40 - 12:00',
-        tag: 'Presentation',
+        tag: 'Student',
         title: `Contribution to a software simulation tool for automated regulation of glycaemia in the case of diabetic patient`,
         content: `Chuang Chia-Hsin IMS Laboratory – AS2N group. University of Bordeaux`
       },
@@ -232,13 +232,13 @@ export default [
       },
       {
         timeline: '14:20 - 14:40',
-        tag: 'Presentation',
+        tag: 'Student',
         title: `LIN, SHANG-MIN Singapore Institute for Neuro-technology, National University of Singapore`,
         content: `Nano Neuro Photonics (Technical team)`
       },
       {
         timeline: '14:40 - 15:00',
-        tag: 'Presentation',
+        tag: 'Student',
         title: `Learning spiking neural networks based of memristive devices`,
         content: `Yi-Chuan, Chang IMS Laboratory – AS2N group. University of Bordeaux`
       },
