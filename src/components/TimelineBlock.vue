@@ -4,8 +4,14 @@
       <img src="@/assets/icon_agenda.svg" width="30px" />
       <h2 class="title">Agenda</h2>
     </div>
+    <el-button-group class="select-bar">
+      <el-button type="primary" @click="currentSelect = 1" :plain="!isSelected(1)">3/14 (四)</el-button>
+      <el-button type="primary" @click="currentSelect = 2" :plain="!isSelected(2)">3/15 (五)</el-button>
+      <el-button type="primary" @click="currentSelect = 3" :plain="!isSelected(3)">3/16 (六)</el-button>
+      <el-button type="primary" @click="currentSelect = 4" :plain="!isSelected(4)">3/17 (日)</el-button>
+    </el-button-group>
     <div class="content">
-      <div class="calender" v-for="(calender, idx) in calenders" :key="idx">
+      <div v-if="currentSelect === idx+1" class="calender" v-for="(calender, idx) in calenders" :key="idx">
         <div class="title row">
           <div class="left-panel"></div>
           <div class="right-panel">
@@ -32,55 +38,17 @@
 </template>
 
 <script>
+import calenders from '@/static/agenda';
 export default {
   data() {
     return {
-      calenders: [
-        {
-          title: 'Day One 1/16',
-          body: [
-            {
-              timeline: '08:00 - 08:30',
-              content: `Register` 
-            },
-            {
-              timeline: '08:00 - 08:30',
-              tag: 'Seminar',
-              title: `Viewing Bigger Pictures Promotes Happier Mood: A psychological explanation and an example in the wild`,
-              content: `Prof. Xuefeng Liang, Kyoto University, Japan` 
-            },
-            {
-              timeline: '08:00 - 08:30',
-              tag: 'Seminar',
-              title: `Viewing Bigger Pictures Promotes Happier Mood: A psychological explanation and an example in the wild`,
-              content: `Prof. Xuefeng Liang, Kyoto University, Japan` 
-            }
-          ]
-        },
-        {
-          title: 'Day Two 1/17',
-          body: [
-            {
-              timeline: '08:00 - 08:30',
-              tag: 'Seminar',
-              title: `Viewing Bigger Pictures Promotes Happier Mood: A psychological explanation and an example in the wild`,
-              content: `Prof. Xuefeng Liang, Kyoto University, Japan` 
-            },
-            {
-              timeline: '08:00 - 08:30',
-              tag: 'Seminar',
-              title: `Viewing Bigger Pictures Promotes Happier Mood: A psychological explanation and an example in the wild`,
-              content: `Prof. Xuefeng Liang, Kyoto University, Japan` 
-            },
-            {
-              timeline: '08:00 - 08:30',
-              tag: 'Seminar',
-              title: `Viewing Bigger Pictures Promotes Happier Mood: A psychological explanation and an example in the wild`,
-              content: `Prof. Xuefeng Liang, Kyoto University, Japan` 
-            }
-          ]
-        }
-      ]
+      calenders,
+      currentSelect: 1
+    }
+  },
+  methods: {
+    isSelected(id) {
+      return id === this.currentSelect;
     }
   }
 }
@@ -118,6 +86,12 @@ $gray: #e6e6e6;
       font-size: 2em;
       letter-spacing: 5px;
       color: rgb(54, 93, 150);
+    }
+  }
+  .select-bar {
+    width: 70%;
+    .el-button {
+      width: calc(100% / 4);
     }
   }
   .content {
