@@ -21,6 +21,9 @@
     <Modal v-if="modalShow !== 0" @displayReset="modalShow = 0">
       <ProfessorOne v-if="modalShow === 1"/>
       <ProfessorTwo v-if="modalShow === 2"/>
+      <ProfessorThree v-if="modalShow === 3"/>
+      <ProfessorFour v-if="modalShow === 4"/>
+      <ProfessorFive v-if="modalShow === 5"/>
     </Modal>
   </div>
 </template>
@@ -29,9 +32,12 @@
 import Modal from './Modal';
 import ProfessorOne from './modalComs/ProfessorOne';
 import ProfessorTwo from './modalComs/ProfessorTwo';
+import ProfessorThree from './modalComs/ProfessorThree';
+import ProfessorFour from './modalComs/ProfessorFour';
+import ProfessorFive from './modalComs/ProfessorFive';
 
 export default {
-  components: { Modal, ProfessorOne, ProfessorTwo },
+  components: { Modal, ProfessorOne, ProfessorTwo, ProfessorThree, ProfessorFour, ProfessorFive },
   data() {
     return {
       modalShow: 0,
