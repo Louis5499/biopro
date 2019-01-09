@@ -1,14 +1,50 @@
 <template>
   <div class="text-area">
-    <p>Sheng-Yu Peng received the B.S. and M.S. degrees in Electrical Engineering from the National Taiwan University, Taipei, Taiwan, in 1995 and 1997 respectively; a degree of Master of Science in Electrical and Computer Engineering from the Cornell University, Ithaca, NY, in 2004; and the Ph.D. degree in Electrical and Computer Engineering from the Georgia Institute of Technology, Atlanta, GA, in 2008. From 2008 to 2011, he worked for GTronix Inc. and MaxLinear Inc. respectively.</p>
-    <p>Dr. Peng joined the National Taiwan University of Science and Technology, Taipei, Taiwan, in 2011. Currently he is an Associate Professor in the Department of Electrical Engineering. His research interests include interface circuits for sensors, reconfigurable analog circuits and systems, power-efficient analog signal processing, and low-power machine learning algorithms.</p>
-    <h3>List of Representative Publications</h3>
-    <p>[1] S.-Y. Peng*, Y.-H. Lee, T.-Y. Wang, H.-C. Huang, M.-R. Lai, and C.-H. Lee, "A Power-Efficient Reconfigurable OTA-C Filter for Low-Frequency Biomedical Applications," IEEE Transactions on Circuits and Systems I: Regular Papers, in print.</p>
-    <p>[2] S.-Y. Peng*, L.-H. Liu, P.-K. Chang, T.-Y. Wang, and H.-Y. Li, "A Power-Efficient Reconfigurable Output-Capacitor-Less Low-Drop-Out Regulator for Low-Power Analog Sensing Front-End," IEEE Transactions on Circuits and Systems I: Regular Papers, accepted in Apr. 2016.</p>
-    <p>[3] T.-Y. Wang, L.-H. Liu, and S.-Y. Peng*, "A Power-Efficient Highly-Linear Reconfigurable Biopotential Sensing Amplifier Using Gate-Balanced Pseudo Resistors," IEEE Transactions on Circuits and Systems II: Express Briefs, vol. 62, no. 2, pp. 199-203, Feb. 2015.</p>
-    <p>[4] T.-Y. Wang, M.-R. Lai, C. M. Twigg, and S.-Y. Peng*, "A Fully Reconfigurable Low-Noise Biopotential Sensing Amplifier With 1.96 Noise Efficiency Factor," IEEE Transactions on Biomedical Circuits and Systems, vol. 8, no. 3, pp. 411-422, June 2014.</p>
-    <p>[5] S.-Y. Peng*, M. S. Qureshi, P. E. Hasler, A. Basu, and F. L. Degertekin, “A Charge-Based Low-Power High-SNR Capacitive Sensing Interface Circuit,” IEEE Transactions on Circuits and Systems I: Regular Papers, Vol. 55, No. 7, pp. 1863 – 1872, Aug. 2008.</p>
-    <p>[6] S.-Y. Peng*, P. E. Hasler, and D. V. Anderson, “An Analog Programmable Multidimensional Radial Basis Function Based Classifier,” IEEE Transactions on Circuits and Systems I: Regular Papers, Vol. 54, No. 10, pp. 2148 – 2158, Oct. 2007.</p>
+    <p class="self"><b>Nitish V. Thakor</b> is a Professor of Electrical and Computer Engineering and Biomedical Engineering at Johns
+    Hopkins University since 1983. He has also been the Professor of Biomedical Engineering and served as the
+    Director of Singapore Institute for Neurotechnology at the National University of Singapore since 2012. Prof.
+    Thakor’s technical expertise is in the field of Neuroengineering, where he has pioneered many technologies for
+    brain monitoring to prosthetic arms and neuroprosthesis. He has published over 380 refereed journal papers
+    (Google H-Index 73, &gt;24,000 citations). He has also more than 20 patents issued or pending and co-founded
+    3 active companies. He is currently the Editor in Chief of Medical and Biological Engineering and Computing,
+    and was the Editor in Chief of IEEE TNSRE from 2005-2011. Prof. Thakor is a recipient of a Research Career
+    Development Award from the National Institutes of Health and a Presidential Young Investigator Award from
+    the National Science Foundation, and is a Fellow of the American Institute of Medical and Biological
+    Engineering, Life Fellow of IEEE, Founding Fellow of the Biomedical Engineering Society, and Fellow of
+    International Federation of Medical and Biological Engineering. He is a recipient of the award of the Academic
+    Career Award and Technical Excellence in Neuroengineering from IEEE Engineering in Medicine and Biology
+    Society, Distinguished Alumnus Award from Indian Institute of Technology, Bombay, India, and a Centennial
+    Medal from the University of Wisconsin School of Engineering.</p>
+    <h3>EXPERIENCE</h3>
+    <div class="experience">
+      <div><p>1974-1976 Electronics Engineer</p><p class="second">Philips Company (India)</p></div>
+      <div><p>1977-1981	Teaching & Research Asst.</p><p class="second">University of Wisconsin, Madison</p></div>
+      <div><p>1981-1983	Assistant Professor</p><p class="second">Northwestern University, Evanston Electrical Eng. & Computer Science</p></div>
+      <div><p>1984-1986	Assistant Professor</p><p class="second">The Johns Hopkins University Biomedical Engineering School of Medicine</p></div>
+      <div><p>1987-1994	Associate Professor</p><p class="second">The Johns Hopkins University Biomedical Engineering School of Medicine</p></div>
+      <div><p>1994-present	Professor</p><p class="second">The Johns Hopkins University Biomedical Engineering School of Medicine</p></div>
+      <div><p>2012-present	Professor</p><p class="second">National University of Singapore Professor, Biomedical Engineering</p></div>
+    </div>
+    <h3>AWARDS</h3>
+    <div class="award">
+      <ul>
+        <li>National Scholarship, India; Graduate Fellowships, University of Wisconsin, Madison</li>
+        <li>2nd Prize, Student Paper Competition, Annu. Conf. Eng. Med. Biol. (1981)</li>
+        <li>1st Prize, Paper Competition, Symp. Computer Appl. Med. Care (1982)</li>
+        <li>Research Career Development Award, The National Institutes of Health (1985-1990)</li>
+        <li>The Presidential Young Investigator Award, The National Science Foundation (1985-1991)</li>
+        <li>The Fulbright Fellowship, Cybernetics Institute, Barcelona, Spain, 1987.</li>
+        <li>Centennial Achievement Medal - University of Wisconsin, School of Engineering, 1993.</li>
+        <li>Fellow, American Institute of Medical and Biological Engineering, 1996; Fellow, Institute of Electrical and Electronics Engineers (IEEE) 1997, Founding Fellow, Biomedical Engineering Society, 2005.</li>
+        <li>Distinguished Service Award, Indian Institute of Technology, Bombay, India, 2008 and Distinguished Alumnus Award, Indian Institute of Technology, Bombay, India, 2010.</li>
+        <li>Technical Achievement Award from IEEE Engineering in Medicine and Biology Society, 2010.</li>
+        <li>Distinguished Achievement Award, University of Wisconsin, School of Engineering, Madison, WI, 2010.</li>
+        <li>Fellow, International Federation of Medical and Biological Engineering, 2012.</li>
+        <li>Editor in Chief, IEEE Transactions on Neural Systems and Rehabilitation Engineering (2005-2011) and Medical and Biological Engineering and Computing (2013-present).</li>
+        <li>Engineering Leadership Award, National University of Singapore, 2016.</li>
+        <li>IEEE Engineering in Medicine and Biology Society, Academic Career Leadership Award, 2017</li>
+      </ul>
+    </div>
   </div>
 </template>
 
@@ -21,6 +57,30 @@ export default {
 <style lang="scss" scoped>
 .text-area {
   width: 80%;
+  .self {
+    line-height: 26px;
+  }
+  .experience {
+    div {
+      display: flex;
+      flex-direction: row;
+      position: relative;
+      width: 90%;
+      margin: 5px 0;
+      .second {
+        position: absolute;
+        left: 60%;
+        width: 50%;
+      }
+    }
+  }
+  .award {
+    ul {
+      li {
+        margin: 6px 0;
+      }
+    }
+  }
   h3 {
     font-size: 2em;
   }

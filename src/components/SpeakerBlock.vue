@@ -14,12 +14,13 @@
             <img src="@/assets/icon_website.svg" width="20px"/>
             <span class="link-body">{{speaker.link.content}}</span>
           </div>
-          <div class="more-button" @click="modalShow = 1">More</div>
+          <div class="more-button" @click="modalShow = idx+1">More</div>
         </div>
       </div>
     </div>
     <Modal v-if="modalShow !== 0" @displayReset="modalShow = 0">
       <ProfessorOne v-if="modalShow === 1"/>
+      <ProfessorTwo v-if="modalShow === 2"/>
     </Modal>
   </div>
 </template>
@@ -27,29 +28,57 @@
 <script>
 import Modal from './Modal';
 import ProfessorOne from './modalComs/ProfessorOne';
+import ProfessorTwo from './modalComs/ProfessorTwo';
 
 export default {
-  components: { Modal, ProfessorOne },
+  components: { Modal, ProfessorOne, ProfessorTwo },
   data() {
     return {
       modalShow: 0,
       speakers: [
         {
-          avatarUrl: '../static/avatar_1.jpg',
-          name: `Prof. Sheng-Yu Peng`,
-          brief: `Department of Electrical Engineering in National Taiwan University of Science and Technology`,
+          avatarUrl: '../static/avatar_nitish.JPG',
+          name: `Prof. Nitish V. Thakor`,
+          brief: `Department of Electrical and Computer Engineering and Biomedical Engineering at Johns Hopkins University`,
           link: {
             type: 'email',
-            content: 'sypeng@mail.ntust.edu.tw'
+            content: 'eletnv@nus.edu.sg'
           }
         },
         {
-          avatarUrl: '../static/avatar_1.jpg',
-          name: `Prof. Sheng-Yu Peng`,
-          brief: `Department of Electrical Engineering in National Taiwan University of Science and Technology`,
+          avatarUrl: '../static/avatar_abdelhamid.jpeg',
+          name: `Prof. Abdelhamid BENAZZOUZ`,
+          brief: `Department of Neurodegenerative diseases institute, CNRS UMR 5293 at University of Bordeaux`,
           link: {
             type: 'email',
-            content: 'sypeng@mail.ntust.edu.tw'
+            content: 'Abdelhamid.benazzouz@u-bordeaux.fr'
+          }
+        },
+        {
+          avatarUrl: '../static/avatar_carolina.jpg',
+          name: `Prof. Carolina Mora Lopez`,
+          brief: `Department of Connected Health Solutions at imec`,
+          link: {
+            type: 'email',
+            content: 'moralope@imec.be'
+          }
+        },
+        {
+          avatarUrl: '../static/avatar_chiara.jpg',
+          name: `Prof. Chiara Bartolozzi`,
+          brief: `Department of iCub Facility at Istituto Italiano di Tecnologia`,
+          link: {
+            type: 'email',
+            content: 'chiara.bartolozzi@iit.it'
+          },
+        },
+        {
+          avatarUrl: '../static/avatar_dries.jpg',
+          name: `Prof. Dries Braeken`,
+          brief: `Department of Life Science Technologies at imec`,
+          link: {
+            type: 'email',
+            content: 'Dries.braeken@imec.be'
           }
         }
       ]
@@ -88,6 +117,7 @@ export default {
       align-items: center;
       justify-content: center;
       max-width: 680px;
+      width: 80%;
       box-shadow: 0px 1px 10px rgba(#666,.3);
       margin: 30px 30px;
       .speaker-avatar {
