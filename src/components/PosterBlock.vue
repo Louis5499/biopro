@@ -2,6 +2,20 @@
   <div class="poster-wrapper">
     <div class="poster-img" :style="pictureBgCss('../static/img_1.png')"></div>
     <div class="poster-word-block">
+      <div class="word-header">Participation</div>
+      <div class="word-description">
+        <div class="white-line"></div>
+        <p class="description-text"> Totally for Free! </p>
+      </div>
+      <div class="word-text">
+        <p>2019 3/14 - 3/17</p>
+        <p>NTHU, HsinChu City, Taiwan</p>
+        <div class="btn-register">Register</div>
+        <p class="smaller" style="marginTop: 30px">You only need to pay for margin, which we would refund you by the end of fourth day.</p>
+        <p class="smaller">For those who needs accomodation, We provide accomodation for one person 500 NTD/night.</p>
+      </div>
+    </div>
+    <!-- <div class="poster-word-block">
       <div class="word-header">Call For Poster</div>
       <div class="word-description">
         <div class="white-line"></div>
@@ -12,7 +26,7 @@
       <div class="word-text">
         This year, a poster competition is opened to everyone. Please submit the abstract before 12/29. You would get a chance to present your research in front of world experts. You can also win a big prize!
       </div>
-    </div>
+    </div> -->
   </div>
 </template>
 
@@ -65,11 +79,11 @@ export default {
       display: flex;
       flex-direction: row;
       align-items: center;
-      height: 70px;
+      height: 40px;
       margin-bottom: 30px;
       .white-line {
         height: 100%;
-        width: 15px;
+        width: 10px;
         background-color: #fff;
       }
       .description-text {
@@ -77,7 +91,34 @@ export default {
       }
     }
     .word-text {
-      line-height: 1.5em;
+      .btn-register {
+        width: 80px;
+        height: 30px;
+        background-color: #fff;
+        border-radius: 10px;
+        color: rgb(0, 151, 255);
+        font-size: .7em;
+
+        margin-top: 10px;
+
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        cursor: pointer;
+        transition: all ease .2s;
+
+        &:hover {
+          background-color: rgba(#fff, .9);
+        }
+      }
+      p {
+        margin: 0;
+        line-height: 1.5em;
+        font-weight: 300;
+        &.smaller {
+          font-size: .75em;
+        }
+      }
     }
   }
 }

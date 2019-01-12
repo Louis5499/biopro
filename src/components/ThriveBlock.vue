@@ -11,11 +11,11 @@
       </div>
     </div>
     <div class="right-panel">
-      <el-carousel :interval="4000" type="card" height="300px">
-        <el-carousel-item><img height="100%" src="@/assets/img_1.png"/></el-carousel-item>
-        <el-carousel-item><img height="100%" src="@/assets/img_2.png"/></el-carousel-item>
-        <el-carousel-item><img height="100%" src="@/assets/img_3.png"/></el-carousel-item>
-        <el-carousel-item><img height="100%" src="@/assets/img_4.png"/></el-carousel-item>
+      <el-carousel :interval="4000" trigger="click" height="300px">
+        <el-carousel-item><div width="100%" class="caro-img" :style="pictureBgCss('../static/img_1.png')"></div></el-carousel-item>
+        <el-carousel-item><div width="100%" class="caro-img" :style="pictureBgCss('../static/img_2.png')"></div></el-carousel-item>
+        <el-carousel-item><div width="100%" class="caro-img" :style="pictureBgCss('../static/img_3.png')"></div></el-carousel-item>
+        <el-carousel-item><div width="100%" class="caro-img" :style="pictureBgCss('../static/img_4.png')"></div></el-carousel-item>
       </el-carousel>
     </div>
   </div>
@@ -23,7 +23,14 @@
 
 <script>
 export default {
-  
+  data() {
+    return {}
+  },
+  methods: {
+    pictureBgCss(img) {
+      return { 'background-image': 'url(' + img + ')' };
+    }
+  }
 }
 </script>
 
@@ -58,6 +65,12 @@ export default {
       color: #7e7e7e;
       line-height: 1.5em;
     }
+  }
+  .caro-img {
+    width: 100%;
+    height: 100%;
+    background-position: center center;
+    background-size: cover;
   }
 }
 @media all and (min-width: 1220px) {

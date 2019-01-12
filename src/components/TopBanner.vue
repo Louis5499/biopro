@@ -16,7 +16,7 @@
       <div class="option-wrapper">
         <div class="nav-option navDesktop" @click="smoothScroll(0)">Agenda</div>
         <div class="nav-option navDesktop" @click="smoothScroll(1)">Speakers</div>
-        <div class="nav-option navDesktop" @click="smoothScroll(2)">Call for Posters</div>
+        <div class="nav-option navDesktop" @click="smoothScroll(2)">Participation</div>
         <div class="nav-option navDesktop" @click="smoothScroll(3)">Location</div>
         <div class="nav-option register">Register</div>
       </div>
