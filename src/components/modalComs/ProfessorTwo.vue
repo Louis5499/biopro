@@ -30,6 +30,7 @@
       <li>88) Abedi P.M., Delaville C., De Deurwaerdère P., Benjelloun W. and Benazzouz A. Intrapallidal administration of 6-hydroxydopamine mimics in large part the electrophysiological and behavioral consequences of major dopamine depletion in the rat. Neuroscience, 2013, 236:289–297. DOI: 10.1016/j.neuroscience.2013.01.043.</li>
       <li>87) Zbrzeski A., Lewis N., Rummens F., Jung R., N'Kaoua G., Benazzouz A., Renaud S. Low-Gain, low-noise integrated neuronal amplifier for implantable artifact-reduction recording System. Journal of Low Power Electronics and Applications (JLPEA), 2013, 3 :279-299. DOI:10.3390/jlpea3030279.</li>
       <li>86) Kolbl F., Sabatier J., N'Kaoua, G., Naudet F., Faggiani E., Benazzouz A. Renaud S. and Lewis N. Characterization of a Non Linear Fractional Model of Electrode-Tissue Impedance for Neuronal Stimulation. IEEE Biomedical Circuits and Systems Conference (BIOCAS). 2013, 338-341.</li>
+      <li>...</li>
     </ul>
   </div>
 </template>
