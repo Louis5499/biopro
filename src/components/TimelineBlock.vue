@@ -24,9 +24,10 @@
           <div class="left-panel"></div>
           <div class="right-panel">
             <span class="calender-title">{{calender.title}}</span>
+            <span class="calender-theme">{{calender.theme}}</span>
           </div>
         </div>
-        <div class="body row" v-for="(row, idx) in calender.body" :key="idx">
+        <div class="body row" v-for="(row, idx) in calender.body" :key="idx" :class="{ thinner: (row.tag === 'Ceremony' || row.tag === 'Break' || row.tag === 'Project')}">
           <div class="left-panel">
             <span style="text-align: center">{{row.timeline}}</span>
             <div v-if="row.tag">{{row.tag}}</div>
@@ -121,6 +122,9 @@ $gray: #e6e6e6;
         height: 120px;
         display: flex;
         flex-direction: row;
+        &.thinner {
+          height: 100px;
+        }
         .left-panel {
           width: 30%;
           height: 100%;
@@ -153,6 +157,16 @@ $gray: #e6e6e6;
           .calender-title {
             font-size: 1.5em;
             font-weight: 500;
+            position: relative;
+            top: 20px;
+          }
+          .calender-theme {
+            font-size: 1.1em;
+            font-weight: 500;
+            margin-top: 10px;
+            color: $orange;
+            position: relative;
+            top: 20px;
           }
           p {
             text-align: center;
@@ -162,6 +176,9 @@ $gray: #e6e6e6;
               color: #365d96;
             }
           }
+        }
+        &.theme-row {
+          height: 60px !important;
         }
       }
     }

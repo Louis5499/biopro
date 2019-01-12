@@ -1,6 +1,7 @@
 export default [
   {
     title: 'Day One 3/14',
+    theme: 'Machine Intelligence',
     body: [
       {
         timeline: '08:30 - 09:00',
@@ -8,13 +9,14 @@ export default [
       },
       {
         timeline: '09:00 - 09:10',
-        tag: 'Opening',
+        tag: 'Ceremony',
         title: `Opening`
       },
       {
         timeline: '09:10 - 10:10',
         tag: 'Invited Speaker',
-        title: `Biometrics, pattern Recognition`,
+        // title: `Biometrics, pattern Recognition`,
+        title: 'Invited Speach',
         content: `Prof. Tetsushi Ohki, Shizuoka University, Japan` 
       },
       {
@@ -31,7 +33,8 @@ export default [
       {
         timeline: '10:50 - 11:40',
         tag: 'Invited Speaker',
-        title: `Biometric authentication, Bioinspired DSP`,
+        // title: `Biometric authentication, Bioinspired DSP`,
+        title: 'Invited Speach',
         content: `Prof. Koichi Ito, Tohoku University, Japan` 
       },
       {
@@ -48,13 +51,13 @@ export default [
       {
         timeline: '13:30 - 14:20',
         tag: 'Invited Speaker',
-        title: 'Invited Speaker',
+        title: 'Invited Speach',
         content: `Prof. Shang-Hong Lai, NTHU & Microsoft, Taiwan`
       },
       {
         timeline: '14:20 - 14:40',
         tag: 'Student',
-        title: `Build and use a haptic mouse`,
+        title: `Build and Use a Haptic Mouse`,
         content: `Kao Wei-Tse, Institute of Neuro-informatics, University of Zurich and ETH Zurich`
       },
       {
@@ -76,17 +79,18 @@ export default [
   },
   {
     title: 'Day Two 3/15',
+    theme: 'Bioelectronic',
     body: [
       {
         timeline: '09:00 - 10:10',
         tag: 'Invited Speaker',
-        title: `Analog and mixed signal circuit design for sensors, bioelectronics and neural interfaces`,
+        title: `Circuit Design For High-Density Cell Interfacing`,
         content: `Prof. Carolina Mora Lopez, IMEC, Belgium` 
       },
       {
         timeline: '10:10 - 10:30',
         tag: 'Student',
-        title: `Software development and signal processing for high throughput silicon multi-electrode array systems`,
+        title: `Software Development and Signal Processing for High Throughput Silicon Multi-Electrode Array Systems`,
         content: `Shuo-Wen Chang, IMEC, Belgium` 
       },
       {
@@ -97,13 +101,13 @@ export default [
       {
         timeline: '10:50 - 11:40',
         tag: 'Invited Speaker',
-        title: `CMOS multi-electrode arrays using Silicon fabrication processes and electrophysiological characterization of cell-electrode interfaces`,
+        title: `Cell And Tissue Technology Interfaces For Healthcare Applications`,
         content: `Prof. Dries Braeken, IMEC, Belgium` 
       },
       {
         timeline: '11:40 - 12:00',
         tag: 'Student',
-        title: `Software development and signal processing for high throughput silicon multi-electrode array systems`,
+        title: `Software Development and Signal Processing for High Throughput Silicon Multi-Electrode Array Systems`,
         content: `Yu-Fan Lo, IMEC, Belgium` 
       },
       {
@@ -142,18 +146,19 @@ export default [
   },
   {
     title: 'Day Three 3/16',
+    theme: 'Neuromorphic Engineering',
     body: [
       {
         timeline: '09:00 - 10:10',
         tag: 'Invited Speaker',
         title: `Neuromorphic Engineering: Approaches To Integrating Sensing In Prosthetics And Robotics`,
-        content: `Prof. Nitish Thakor, Singapore Institute for Neuro-technology, National University of Singapore` 
+        content: `Prof. Nitish Thakor, SiNAPSE, National University of Singapore, Singapore` 
       },
       {
         timeline: '10:10 - 10:30',
         tag: 'Student',
         title: `Neuromorphic Engineering and Neuro-prosthesis`,
-        content: `Kuan-Wei Hou, Singapore Institute for Neuro-technology, National University of Singapore` 
+        content: `Kuan-Wei Hou, SiNAPSE, National University of Singapore, Singapore` 
       },
       {
         timeline: '10:30 - 10:50',
@@ -169,7 +174,7 @@ export default [
       {
         timeline: '11:40 - 12:00',
         title: `Neuromorphic Engineering And Neuro-prosthesis`,
-        content: `Wu-Hsun Lai, SiNAPSE(NUS), Singapore`, 
+        content: `Wu-Hsun Lai, SiNAPSE, National University of Singapore, Singapore`, 
         tag: 'Student'
       },
       {
@@ -185,13 +190,13 @@ export default [
       {
         timeline: '14:20 - 14:40',
         tag: 'Student',
-        content: `Develop A Brain Computer Interface`,
-        title: `Heng-An Tzou, Nangyang Technology University, Singapore`,
+        title: `Develop A Brain Computer Interface`,
+        content: `Heng-An Tzou, Nangyang Technology University, Singapore`,
       },
       {
         timeline: '14:40 - 15:00',
         tag: 'Student',
-        title: `Learning spiking neural networks based of memristive devices`,
+        title: `Learning Spiking Neural Networks Based of Memristive Devices`,
         content: `Yi-Chuan Chang, IMS, University of Bordeaux, France`
       },
       {
@@ -208,17 +213,18 @@ export default [
   },
   {
     title: 'Day Four 3/17',
+    theme: 'Bioelectronic Medicine',
     body: [
       {
         timeline: '09:00 - 10:10',
         tag: 'Invited Speaker',
-        title: `Learning Spiking Neural Networks Based Of Memristive Devices`,
+        title: `Deep Brain Stimulation In Parkinson’s Disease: From Bench To Beside`,
         content: `Prof. Abdelhamid Benazzou, University of Bordeaux, France` 
       },
       {
         timeline: '10:10 - 10:30',
         tag: 'Student',
-        title: `Contribution To A Software Simulation Tool For Automated Regulation Of Glycaemia In The Case Of Diabetic Patient`,
+        title: `Contribution to A Software Simulation Tool for Automated Regulation of Glycaemia in the case of Diabetic Patient`,
         content: `Hsin-Jou Shen, IMS, University of Bordeaux, France` 
       },
       {
@@ -244,18 +250,18 @@ export default [
       },
       {
         timeline: '13:30 - 14:20',
-        tag: 'Project Presentation',
-        title: `Project`
+        title: 'Project Presentation',
+        tag: `Project`
       },
       {
         timeline: '14:20 - 14:40',
-        tag: 'Project Presentation',
-        title: `Project`
+        title: 'Project Presentation',
+        tag: `Project`
       },
       {
         timeline: '14:40 - 15:00',
-        tag: 'Project Presentation',
-        title: `Project`
+        title: 'Project Presentation',
+        tag: `Project`
       },
       {
         timeline: '15:00 - 15:20',
