@@ -9,7 +9,19 @@
     <div id="app"></div>
     <!-- built files will be auto injected -->
   </body>
-
+  <script src="https://www.gstatic.com/firebasejs/5.7.3/firebase.js"></script>
+  <script>
+    // Initialize Firebase
+    var config = {
+      apiKey: "AIzaSyDxSy1IiGZAY4Zg1m5BEi5zU5uFnCkXZqI",
+      authDomain: "nthu-a-plus.firebaseapp.com",
+      databaseURL: "https://nthu-a-plus.firebaseio.com",
+      projectId: "nthu-a-plus",
+      storageBucket: "nthu-a-plus.appspot.com",
+      messagingSenderId: "426281724198"
+    };
+    firebase.initializeApp(config);
+  </script>
   <!-- Google Maps Load -->
   <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDxSy1IiGZAY4Zg1m5BEi5zU5uFnCkXZqI" type="text/javascript"></script>
 </html>

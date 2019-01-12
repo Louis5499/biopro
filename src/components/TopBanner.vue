@@ -18,7 +18,7 @@
         <div class="nav-option navDesktop" @click="smoothScroll(1)">Speakers</div>
         <div class="nav-option navDesktop" @click="smoothScroll(2)">Participation</div>
         <div class="nav-option navDesktop" @click="smoothScroll(3)">Location</div>
-        <div class="nav-option register">Register</div>
+        <div class="nav-option register" @click="changeRoute()">Register</div>
       </div>
     </div>
     <div class="text-block">
@@ -34,7 +34,7 @@
         <span>Bio-electronics</span> -->
         <span>Machine intelligence for bio-electronic medicine</span>
       </div>
-      <div class="btn-register navDesktop">Register</div>
+      <div class="btn-register navDesktop" @click="changeRoute()">Register</div>
     </div>
     <div class="map-block navDesktop" @click="smoothScroll(3)">
       <img width="100%" src="@/assets/header_map.png" />
@@ -69,6 +69,9 @@ export default {
         left: 0, 
         behavior: 'smooth' 
       });
+    },
+    changeRoute() {
+      window.location.href = 'https://bioproaplus.kktix.cc/events/workshop-2019';
     }
   },
   mounted() {

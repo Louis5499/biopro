@@ -10,7 +10,7 @@
       <div class="word-text">
         <p>2019 3/14 - 3/17</p>
         <p>NTHU, HsinChu City, Taiwan</p>
-        <div class="btn-register">Register</div>
+        <div class="btn-register" @click="changeRoute()">Register</div>
         <p class="smaller" style="marginTop: 30px">You only need to pay for margin, which we would refund you by the end of fourth day.</p>
         <p class="smaller">For those who needs accomodation, We provide accomodation for one person 500 NTD/night.</p>
       </div>
@@ -38,6 +38,9 @@ export default {
   methods: {
     pictureBgCss(img) {
       return { 'background-image': 'url(' + img + ')' };
+    },
+    changeRoute() {
+      window.location.href = 'https://bioproaplus.kktix.cc/events/workshop-2019';
     }
   }
 }
