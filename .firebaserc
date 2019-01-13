@@ -5,11 +5,8 @@
   "targets": {
     "nthu-a-plus": {
       "hosting": {
-        "event.bioproaplus.org": [
-          "nthu-a-plus"
-        ],
         "event": [
-          "event.bioproaplus.org"
+          "nthu-a-plus"
         ]
       }
     }
