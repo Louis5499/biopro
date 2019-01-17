@@ -17,8 +17,8 @@
       <div class="theme-block">
         <div class="theme-title">Accomadation</div>
         <div class="theme-description">
-          <p>To make sure you will not miss any interesting event, we provide the service of accommodation booking for participants (600NTD/person/night; Only 20 vacancies are available).</p>
-          <p>You can purchase the one-night(1/26 ~ 1/27) or two-night (1/26 ~ 1/28) tickets from the ticket page.</p>
+          <p>To make sure you will not miss any interesting event, we provide the service of accommodation booking for participants (500NTD/person/night; Only 20 vacancies are available).</p>
+          <p>You can purchase the accommodation tickets from the ticket page.</p>
         </div>
       </div>
     </div>

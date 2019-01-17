@@ -2,7 +2,7 @@
   <div class="head-wrapper">
     <img class="background" src="@/assets/top_banner_bg.svg">
     <div class="nav">
-      <div class="logo">Biopro A+</div>
+      <div class="logo">BioPro A+</div>
       <el-dropdown class="navMobile dropdown-menu" trigger="click" @command="smoothScroll">
         <el-button circle icon ="el-icon-arrow-down" class="el-dropdown-link"></el-button>
         <el-dropdown-menu slot="dropdown">
@@ -32,7 +32,7 @@
         <span>Machine Intelligence</span>
         <div class="line"></div>
         <span>Bio-electronics</span> -->
-        <span>Machine intelligence for bio-electronic medicine</span>
+        <span>Machine Intelligence and Bio-electronic Medicine</span>
       </div>
       <div class="btn-register navDesktop" @click="changeRoute()">Register</div>
     </div>
