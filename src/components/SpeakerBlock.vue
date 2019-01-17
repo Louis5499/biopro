@@ -19,11 +19,7 @@
       </div>
     </div>
     <Modal v-if="modalShow !== 0" @displayReset="modalShow = 0">
-      <ProfessorOne v-if="modalShow === 1"/>
-      <ProfessorTwo v-if="modalShow === 2"/>
-      <ProfessorThree v-if="modalShow === 3"/>
-      <ProfessorFour v-if="modalShow === 4"/>
-      <ProfessorFive v-if="modalShow === 5"/>
+      <iframe :src="speakers[modalShow-1].pdfLink" style="width: 90%; height: 90%"></iframe>
     </Modal>
   </div>
 </template>
@@ -35,9 +31,10 @@ import ProfessorTwo from './modalComs/ProfessorTwo';
 import ProfessorThree from './modalComs/ProfessorThree';
 import ProfessorFour from './modalComs/ProfessorFour';
 import ProfessorFive from './modalComs/ProfessorFive';
+import pdf from 'vue-pdf'
 
 export default {
-  components: { Modal, ProfessorOne, ProfessorTwo, ProfessorThree, ProfessorFour, ProfessorFive },
+  components: { Modal, ProfessorOne, ProfessorTwo, ProfessorThree, ProfessorFour, ProfessorFive, pdf },
   data() {
     return {
       modalShow: 0,
@@ -49,7 +46,8 @@ export default {
           link: {
             type: 'email',
             content: 'eletnv@nus.edu.sg'
-          }
+          },
+          pdfLink: `../static/pdf_cvs/nitish.pdf`
         },
         {
           avatarUrl: '../static/avatar_abdelhamid.jpeg',
@@ -58,7 +56,8 @@ export default {
           link: {
             type: 'email',
             content: 'Abdelhamid.benazzouz@u-bordeaux.fr'
-          }
+          },
+          pdfLink: `../static/pdf_cvs/abdelhamid.pdf`
         },
         {
           avatarUrl: '../static/avatar_carolina.jpg',
@@ -67,7 +66,8 @@ export default {
           link: {
             type: 'email',
             content: 'moralope@imec.be'
-          }
+          },
+          pdfLink: `../static/pdf_cvs/carolina.pdf`
         },
         {
           avatarUrl: '../static/avatar_chiara.jpg',
@@ -77,6 +77,7 @@ export default {
             type: 'email',
             content: 'chiara.bartolozzi@iit.it'
           },
+          pdfLink: `../static/pdf_cvs/chiara.pdf`
         },
         {
           avatarUrl: '../static/avatar_dries.jpg',
@@ -85,7 +86,18 @@ export default {
           link: {
             type: 'email',
             content: 'Dries.braeken@imec.be'
-          }
+          },
+          pdfLink: `../static/pdf_cvs/dries.pdf`
+        },
+        {
+          avatarUrl: '../static/avatar_tetsushi.jpg',
+          name: `Prof. Tetsushi Ohki`,
+          brief: `Department of Graduate School of Integrated Science and Technology at Shizuoka University`,
+          link: {
+            type: 'email',
+            content: 'ohki@inf.shizuoka.ac.jp'
+          },
+          pdfLink: `../static/pdf_cvs/tetsushi.pdf`
         }
       ]
     }

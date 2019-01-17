@@ -10,6 +10,7 @@
           <el-dropdown-item :command="1">Speakers</el-dropdown-item>
           <el-dropdown-item :command="2">Call for Posters</el-dropdown-item>
           <el-dropdown-item :command="3">Location</el-dropdown-item>
+          <el-dropdown-item @click="changeRoute('fb')">Facebook</el-dropdown-item>
           <el-dropdown-item>Register</el-dropdown-item>
         </el-dropdown-menu>
       </el-dropdown>
@@ -18,7 +19,8 @@
         <div class="nav-option navDesktop" @click="smoothScroll(1)">Speakers</div>
         <div class="nav-option navDesktop" @click="smoothScroll(2)">Participation</div>
         <div class="nav-option navDesktop" @click="smoothScroll(3)">Location</div>
-        <div class="nav-option register" @click="changeRoute()">Register</div>
+        <div class="nav-option navDesktop" @click="changeRoute('fb')">Facebook</div>
+        <div class="nav-option register" @click="changeRoute('kktix')">Register</div>
       </div>
     </div>
     <div class="text-block">
@@ -34,7 +36,7 @@
         <span>Bio-electronics</span> -->
         <span>Machine Intelligence and Bio-electronic Medicine</span>
       </div>
-      <div class="btn-register navDesktop" @click="changeRoute()">Register</div>
+      <div class="btn-register navDesktop" @click="changeRoute('kktix')">Register</div>
     </div>
     <div class="map-block navDesktop" @click="smoothScroll(3)">
       <img width="100%" src="@/assets/header_map.png" />
@@ -42,7 +44,7 @@
       <div class="below-block">
         <img class="arrow" src="@/assets/right_arrow.svg"/>
         <div class="inner-text-block">
-          <span>26 - 28 Jan</span>
+          <span>14 - 17 Mar</span>
           <span>NTHU</span>
         </div>
       </div>
@@ -70,8 +72,11 @@ export default {
         behavior: 'smooth' 
       });
     },
-    changeRoute() {
-      window.location.href = 'https://bioproaplus.kktix.cc/events/workshop-2019';
+    changeRoute(name) {
+      let changeRouteUrl;
+      if (name === 'fb') changeRouteUrl = 'https://www.facebook.com/biopro.aplus/';
+      else changeRouteUrl = 'https://bioproaplus.kktix.cc/events/workshop-2019'
+      window.location.href = changeRouteUrl;
     }
   },
   mounted() {

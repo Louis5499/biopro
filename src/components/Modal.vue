@@ -3,7 +3,7 @@
     <div class="popout">
       <div class="titlebar">
         <h2 class="titlebarText">
-          <span>Bio</span>
+          <span>{{titleName}}</span>
         </h2>
         <div class="titlebarLine"></div>
         <img @click.self="displayReset(false)" class="titlebarCancel" src="@/assets/icon_cancel.svg" width="20px">
@@ -21,6 +21,12 @@ export default {
     return {
       currentTab: 1
     };
+  },
+  props: {
+    titleName: {
+      type: String,
+      default: 'bio'
+    }
   },
   methods: {
     displayReset(arg) {
@@ -72,6 +78,8 @@ export default {
   overflow: hidden;
   background-color: #F6F6F6;
 
+  max-width: 900px;
+  max-height: 600px;
   animation: popouts .3s ease;
 
   z-index: 1001;

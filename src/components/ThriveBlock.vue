@@ -6,8 +6,8 @@
         <h2>Thrive & Prosper</h2>
       </div>
       <div class="text-content">
-        <p>In 2017, the BioPro A+ Platform has funded more students to work with world-leading experts in bio-inspired systems, bio-electronics and machine intelligence.</p>
-        <p>In this exciting event, we would like to share our experience and joy with you, as well as to provide the opportunity for you to interact with international researchers and students in related fields.</p>
+        <p>The <a href="https://www.bioproaplus.org/">BioPro A+ platform</a> has been funded by the Ministry of Education in Taiwan since 2016. Its main mission is providing internship scholarships for students to work with world-leading experts on bio-inspired systems, bio-electronics, and machine intelligence.</p>
+        <p>In this exciting event, we would like to share our experiences and joy with you, as well as to provide the opportunity for you to interact with international researchers and students in related fields. For students interested in applying for internship scholarships in 2019, this workshop will be the best chance for you to interact with international researchers directly.</p>
       </div>
     </div>
     <div class="right-panel">
@@ -64,6 +64,12 @@ export default {
     p {
       color: #7e7e7e;
       line-height: 1.5em;
+    }
+    a:link {
+      color: #a2eae2;
+    }
+    a:visited {
+      color: #caabd8;
     }
   }
   .caro-img {

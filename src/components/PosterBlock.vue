@@ -5,14 +5,17 @@
       <div class="word-header">Participation</div>
       <div class="word-description">
         <div class="white-line"></div>
-        <p class="description-text"> Totally for Free! </p>
+        <div class="des-wrapper">
+          <p class="description-text"> Totally Free for All Activities! (Max. 100 persons)</p>
+          <p class="smaller">A deposit of 350 NTD is required for your registration. The deposit will be fully refunded by the end of the fourth day.</p>
+        </div>
       </div>
       <div class="word-text">
         <p>2019 3/14 - 3/17</p>
         <p>NTHU, HsinChu City, Taiwan</p>
         <div class="btn-register" @click="changeRoute()">Register</div>
-        <p class="smaller" style="marginTop: 30px">You only need to pay for margin, which we would refund you by the end of fourth day.</p>
-        <p class="smaller">For those who needs accomodation, We provide accomodation for one person 500 NTD/night.</p>
+        <p class="smaller" style="marginTop: 30px">For participants who need accomodation, you can book accomodation in our registration page for 500 NTD/night/person.</p>
+        <p class="smaller">Registration deadline ends on 2/12.</p>
       </div>
     </div>
     <!-- <div class="poster-word-block">
@@ -82,18 +85,30 @@ export default {
       display: flex;
       flex-direction: row;
       align-items: center;
-      height: 40px;
+      height: 70px;
       margin-bottom: 30px;
       .white-line {
         height: 100%;
         width: 10px;
         background-color: #fff;
       }
-      .description-text {
+      .des-wrapper {
+        display: flex;
+        flex-direction: column;
         margin-left: 10px;
+        .description-text {
+          font-size: 1.2em;
+          margin: 10px 0;
+        }
+        .smaller {
+          font-size: .6em;
+          margin: 0;
+          line-height: 20px;
+        }
       }
     }
     .word-text {
+      margin-top: 50px;
       .btn-register {
         width: 80px;
         height: 30px;

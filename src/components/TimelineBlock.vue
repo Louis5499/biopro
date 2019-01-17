@@ -19,7 +19,7 @@
       <el-button type="primary" @click="currentSelect = 4" :plain="!isSelected(4)">3/17 (Sun)</el-button>
     </el-button-group>
     <div class="content">
-      <div v-if="currentSelect === idx+1" class="calender" v-for="(calender, idx) in calenders" :key="idx">
+      <div v-if="currentSelect === dateIdx+1" class="calender" v-for="(calender, dateIdx) in calenders" :key="dateIdx">
         <div class="title row">
           <div class="left-panel"></div>
           <div class="right-panel">
@@ -33,8 +33,8 @@
             <div v-if="row.tag">{{row.tag}}</div>
           </div>
           <div class="right-panel">
-            <p v-if="row.title" class="schedule-title">{{row.title}}</p>
-            <p class="schedule-content">{{row.content}}</p>
+            <p v-if="row.title" class="schedule-title" :class="{clickable: row.dialog}" @click="dialogOpen(dateIdx, idx)">{{row.title}}</p>
+            <p class="schedule-content" :class="{clickable: row.webUrl}" @click="changeUrl(row.webUrl)">{{row.content}}</p>
           </div>
         </div>
         <div class="body row">
@@ -43,21 +43,38 @@
         </div>
       </div>
     </div>
+    <Modal v-if="isModalShow" @displayReset="isModalShow = false" :titleName="'Tentative Abstract'">
+      <p class="modal-text">{{calenders[selectedDateId].body[selectedEventId].dialog}}</p>
+    </Modal>
   </div>
 </template>
 
 <script>
 import calenders from '@/static/agenda';
+import Modal from './Modal';
 export default {
   data() {
     return {
       calenders,
-      currentSelect: 1
+      currentSelect: 1,
+      selectedDateId: -1,
+      selectedEventId: -1,
+      isModalShow: false
     }
   },
+  components: { Modal },
   methods: {
     isSelected(id) {
       return id === this.currentSelect;
+    },
+    dialogOpen(dateId, eventId) {
+      if (!calenders[dateId].body[eventId].dialog) return;
+      this.selectedDateId = dateId;
+      this.selectedEventId = eventId;
+      this.isModalShow = true;
+    },
+    changeUrl(webUrl) {
+      if (webUrl) window.location = webUrl;
     }
   }
 }
@@ -75,6 +92,10 @@ $gray: #e6e6e6;
   background-color: $gray;
   position: relative;
   margin-top: 100px;
+  .modal-text {
+    width: 90%;
+    line-height: 30px;
+  }
   &:before {
     content:"\A";
     border-style: solid;
@@ -174,6 +195,9 @@ $gray: #e6e6e6;
             &.schedule-title {
               margin-bottom: 10px;
               color: #365d96;
+            }
+            &.clickable {
+              cursor: pointer;
             }
           }
         }
