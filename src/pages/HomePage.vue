@@ -2,8 +2,8 @@
   <div class="wrapper">
     <TopBanner />
     <ThriveBlock />
-    <TimelineBlock />
-    <SpeakerBlock />
+    <TimelineBlock @nameClick="agendaChooseNum = $event"/>
+    <SpeakerBlock :agendaChooseNum="agendaChooseNum"/>
     <!-- <AgendaBlock /> -->
     <PosterBlock />
     <LocationBlock />
@@ -24,6 +24,11 @@ import SponserBlock  from '@/components/SponserBlock';
 export default {
   components: {
     TopBanner, ThriveBlock, TimelineBlock, SpeakerBlock, AgendaBlock, PosterBlock, LocationBlock, SponserBlock
+  },
+  data() {
+    return {
+      agendaChooseNum: 0
+    }
   }
 }
 </script>

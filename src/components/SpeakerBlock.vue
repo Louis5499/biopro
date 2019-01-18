@@ -35,6 +35,12 @@ import pdf from 'vue-pdf'
 
 export default {
   components: { Modal, ProfessorOne, ProfessorTwo, ProfessorThree, ProfessorFour, ProfessorFive, pdf },
+  props: {
+    agendaChooseNum: {
+      type: Number,
+      default: 0
+    }
+  },
   data() {
     return {
       modalShow: 0,
@@ -47,7 +53,8 @@ export default {
             type: 'email',
             content: 'eletnv@nus.edu.sg'
           },
-          pdfLink: `../static/pdf_cvs/nitish.pdf`
+          pdfLink: `../static/pdf_cvs/nitish.pdf`,
+          agendaChooseNum: 1
         },
         {
           avatarUrl: '../static/avatar_abdelhamid.jpeg',
@@ -57,7 +64,8 @@ export default {
             type: 'email',
             content: 'Abdelhamid.benazzouz@u-bordeaux.fr'
           },
-          pdfLink: `../static/pdf_cvs/abdelhamid.pdf`
+          pdfLink: `../static/pdf_cvs/abdelhamid.pdf`,
+          agendaChooseNum: 2
         },
         {
           avatarUrl: '../static/avatar_carolina.jpg',
@@ -67,7 +75,8 @@ export default {
             type: 'email',
             content: 'moralope@imec.be'
           },
-          pdfLink: `../static/pdf_cvs/carolina.pdf`
+          pdfLink: `../static/pdf_cvs/carolina.pdf`,
+          agendaChooseNum: 3
         },
         {
           avatarUrl: '../static/avatar_chiara.jpg',
@@ -77,7 +86,8 @@ export default {
             type: 'email',
             content: 'chiara.bartolozzi@iit.it'
           },
-          pdfLink: `../static/pdf_cvs/chiara.pdf`
+          pdfLink: `../static/pdf_cvs/chiara.pdf`,
+          agendaChooseNum: 4
         },
         {
           avatarUrl: '../static/avatar_dries.jpg',
@@ -87,7 +97,8 @@ export default {
             type: 'email',
             content: 'Dries.braeken@imec.be'
           },
-          pdfLink: `../static/pdf_cvs/dries.pdf`
+          pdfLink: `../static/pdf_cvs/dries.pdf`,
+          agendaChooseNum: 5
         },
         {
           avatarUrl: '../static/avatar_tetsushi.jpg',
@@ -97,9 +108,15 @@ export default {
             type: 'email',
             content: 'ohki@inf.shizuoka.ac.jp'
           },
-          pdfLink: `../static/pdf_cvs/tetsushi.pdf`
+          pdfLink: `../static/pdf_cvs/tetsushi.pdf`,
+          agendaChooseNum: 6
         }
       ]
+    }
+  },
+  watch: {
+    agendaChooseNum() {
+      this.modalShow = this.agendaChooseNum;
     }
   }
 }

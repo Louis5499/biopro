@@ -34,7 +34,7 @@
           </div>
           <div class="right-panel">
             <p v-if="row.title" class="schedule-title" :class="{clickable: row.dialog}" @click="dialogOpen(dateIdx, idx)">{{row.title}}</p>
-            <p class="schedule-content" :class="{clickable: row.webUrl}" @click="changeUrl(row.webUrl)">{{row.content}}</p>
+            <p class="schedule-content" :class="{clickable: row.agendaChooseNum}" @click="nameClick(row)">{{row.content}}</p>
           </div>
         </div>
         <div class="body row">
@@ -75,6 +75,10 @@ export default {
     },
     changeUrl(webUrl) {
       if (webUrl) window.location = webUrl;
+    },
+    nameClick(rowData) {
+      if (!rowData.agendaChooseNum) return;
+      this.$emit('nameClick', rowData.agendaChooseNum);
     }
   }
 }
