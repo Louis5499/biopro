@@ -14,11 +14,11 @@
             <img src="@/assets/icon_website.svg" width="20px"/>
             <span class="link-body">{{speaker.link.content}}</span>
           </div>
-          <div class="more-button" @click="modalShow = idx+1">More</div>
+          <div v-if="speaker.pdfLink" class="more-button" @click="modalShow = idx+1">More</div>
         </div>
       </div>
     </div>
-    <Modal v-if="modalShow !== 0" @displayReset="modalShow = 0">
+    <Modal v-if="modalShow !== 0 && speakers[modalShow-1].pdfLink" @displayReset="modalShow = 0">
       <iframe :src="speakers[modalShow-1].pdfLink" style="width: 90%; height: 90%"></iframe>
     </Modal>
   </div>
@@ -110,6 +110,17 @@ export default {
           },
           pdfLink: `../static/pdf_cvs/tetsushi.pdf`,
           agendaChooseNum: 6
+        },
+        {
+          avatarUrl: '../static/avatar_ito.gif',
+          name: `Prof. Koichi Ito`,
+          brief: `Department of ECEI in Tohoku University`,
+          link: {
+            type: 'email',
+            content: 'ito@aoki.ecei.tohoku.ac.jp'
+          },
+          // pdfLink: ``,
+          agendaChooseNum: 7
         }
       ]
     }
