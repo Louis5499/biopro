@@ -119,7 +119,7 @@ export default {
             type: 'email',
             content: 'ito@aoki.ecei.tohoku.ac.jp'
           },
-          // pdfLink: ``,
+          pdfLink: `../static/pdf_cvs/ito.pdf`,
           agendaChooseNum: 7
         }
       ]
