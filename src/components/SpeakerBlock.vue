@@ -121,6 +121,17 @@ export default {
           },
           pdfLink: `../static/pdf_cvs/ito.pdf`,
           agendaChooseNum: 7
+        },
+        {
+          avatarUrl: '../static/avatar_yannick.jpg',
+          name: `Prof. Yannick Bornat`,
+          brief: `Department of Electronic Engineering in University of Bordeaux `,
+          link: {
+            type: 'email',
+            content: 'yannick.bornat@ims-bordeaux.fr'
+          },
+          pdfLink: `../static/pdf_cvs/yannick.pdf`,
+          agendaChooseNum: 8
         }
       ]
     }

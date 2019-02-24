@@ -206,7 +206,8 @@ export default [
         timeline: '13:30 - 14:20',
         tag: 'Invited Speaker',
         title: `Smart Control Of Glyceamia For Diabetic Patients`,
-        content: `Prof. Yannick Bornat@University of Bordeaux, France`
+        content: `Prof. Yannick Bornat@University of Bordeaux, France`,
+        agendaChooseNum: 8
       },
       {
         timeline: '14:20 - 14:40',
