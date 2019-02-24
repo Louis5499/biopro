@@ -63,8 +63,8 @@ export default [
       {
         timeline: '14:20 - 14:40',
         tag: 'Student',
-        title: `Build and Use a Haptic Mouse`,
-        content: `Kao Wei-Tse(高暐哲)@University of Zurich and ETH Zurich`
+        title: `Develop A Brain Computer Interface`,
+        content: `Heng-An Tzou(鄒恆安)@Nangyang Technology University, Singapore`
       },
       {
         timeline: '14:40 - 15:00',
@@ -129,7 +129,8 @@ export default [
       {
         timeline: '13:30 - 14:20',
         tag: 'Invited Speaker',
-        title: `Invited Speaker`
+        title: `Invited Speaker`,
+        content: 'Prof. Hsin Chen@NTHU, Taiwan'
       },
       {
         timeline: '14:20 - 14:40',
@@ -204,13 +205,14 @@ export default [
       {
         timeline: '13:30 - 14:20',
         tag: 'Invited Speaker',
-        title: `Invited Speaker`
+        title: `Smart Control Of Glyceamia For Diabetic Patients`,
+        content: `Prof. Yannick Bornat@University of Bordeaux, France`
       },
       {
         timeline: '14:20 - 14:40',
         tag: 'Student',
-        title: `Develop a Brain Computer Interface`,
-        content: `Heng-An Tzou(鄒恆安)@Nangyang Technology University, Singapore`,
+        title: `Build And Use A Haptic Mouse`,
+        content: `Wei-Tse Kao(高暐哲)@Eth/Zuh, Switzerland`,
       },
       {
         timeline: '14:40 - 15:00',
@@ -257,7 +259,8 @@ export default [
       {
         timeline: '10:50 - 11:40',
         tag: 'Invited Speaker',
-        title: `Invited Speaker`
+        title: `Invited Speaker`,
+        content: `戴春暉醫師@NTU`
       },
       {
         timeline: '11:40 - 12:00',
