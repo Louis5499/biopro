@@ -132,6 +132,17 @@ export default {
           },
           pdfLink: `../static/pdf_cvs/yannick.pdf`,
           agendaChooseNum: 8
+        },
+        {
+          avatarUrl: '../static/avatar_chun.jpg',
+          name: `Dr. Chun-Hwei Tai`,
+          brief: `Department of Neurology in National Taiwan University Hospital`,
+          link: {
+            type: 'email',
+            content: 'chtai1502@ntu.edu.tw'
+          },
+          pdfLink: `../static/pdf_cvs/chunhwei.pdf`,
+          agendaChooseNum: 9
         }
       ]
     }

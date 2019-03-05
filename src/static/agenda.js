@@ -261,7 +261,8 @@ export default [
         timeline: '10:50 - 11:40',
         tag: 'Invited Speaker',
         title: `Neuronal firing patterns and circuitry oscillations in parkinsonian motor control`,
-        content: `Dr.Chun-Hwei Tai@NTU`
+        content: `Dr.Chun-Hwei Tai@National Taiwan University Hospital`,
+        agendaChooseNum: 9
       },
       {
         timeline: '11:40 - 12:00',
