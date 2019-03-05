@@ -9,6 +9,7 @@
       <el-button type="primary" @click="currentSelect = 2" :plain="!isSelected(2)">3/15 (Fri)</el-button>
       <el-button type="primary" @click="currentSelect = 3" :plain="!isSelected(3)">3/16 (Sat)</el-button>
       <el-button type="primary" @click="currentSelect = 4" :plain="!isSelected(4)">3/17 (Sun)</el-button>
+      <el-button type="primary" @click="currentSelect = 5" :plain="!isSelected(5)">3/18 (Mon)</el-button>
     </el-button-group>
     <el-button-group class="select-bar mobile">
       <el-button type="primary" @click="currentSelect = 1" :plain="!isSelected(1)">3/14 (Thu)</el-button>
@@ -17,6 +18,7 @@
     <el-button-group class="select-bar mobile">
       <el-button type="primary" @click="currentSelect = 3" :plain="!isSelected(3)">3/16 (Sat)</el-button>
       <el-button type="primary" @click="currentSelect = 4" :plain="!isSelected(4)">3/17 (Sun)</el-button>
+      <el-button type="primary" @click="currentSelect = 5" :plain="!isSelected(5)">3/18 (Mon)</el-button>
     </el-button-group>
     <div class="content">
       <div v-if="currentSelect === dateIdx+1" class="calender" v-for="(calender, dateIdx) in calenders" :key="dateIdx">
@@ -125,7 +127,7 @@ $gray: #e6e6e6;
   .select-bar {
     width: 70%;
     .el-button {
-      width: calc(100% / 4);
+      width: calc(100% / 5);
     }
   }
   .content {

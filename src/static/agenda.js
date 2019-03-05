@@ -77,7 +77,7 @@ export default [
         title: `Coffee break`
       },
       {
-        timeline: '15:20 - 17:00',
+        timeline: '15:20 - 18:30',
         tag: 'Project',
         title: `Hands-on Project`
       }
@@ -129,7 +129,7 @@ export default [
       {
         timeline: '13:30 - 14:20',
         tag: 'Invited Speaker',
-        title: `Invited Speaker`,
+        title: `Development of a Miniaturised, Wireless Neuromodulator Based on Experiments with Parkinsonian Rat Models`,
         content: 'Prof. Hsin Chen@NTHU, Taiwan'
       },
       {
@@ -150,7 +150,7 @@ export default [
         title: `Coffee break`
       },
       {
-        timeline: '15:20 - 17:00',
+        timeline: '15:20 - 18:30',
         tag: 'Project',
         title: `Hands-on Project`
       }
@@ -227,7 +227,7 @@ export default [
         title: `Coffee break`
       },
       {
-        timeline: '15:20 - 17:00',
+        timeline: '15:20 - 18:30',
         tag: 'Project',
         title: `Hands-on Project`
       }
@@ -285,10 +285,19 @@ export default [
         title: `Coffee break`
       },
       {
-        timeline: '15:20 - 17:00',
+        timeline: '15:20 - 18:30',
         tag: 'Ceremony',
         title: `Closing Remark`
       }
     ],
+  },
+  {
+    title: 'Day Five 3/18',
+    body: [
+      {
+        timeline: '',
+        title: 'Internship Project Discussion'
+      }
+    ]
   }
 ];
