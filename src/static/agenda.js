@@ -260,8 +260,8 @@ export default [
       {
         timeline: '10:50 - 11:40',
         tag: 'Invited Speaker',
-        title: `Invited Speaker`,
-        content: `戴春暉醫師@NTU`
+        title: `Neuronal firing patterns and circuitry oscillations in parkinsonian motor control`,
+        content: `Dr.Chun-Hwei Tai@NTU`
       },
       {
         timeline: '11:40 - 12:00',
