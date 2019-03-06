@@ -4,6 +4,7 @@
     <ThriveBlock />
     <TimelineBlock @nameClick="agendaChooseNum = $event"/>
     <SpeakerBlock :agendaChooseNum="agendaChooseNum"/>
+    <HandOnBlock />
     <!-- <AgendaBlock /> -->
     <PosterBlock />
     <LocationBlock />
@@ -18,12 +19,13 @@ import TimelineBlock from '@/components/TimelineBlock';
 import SpeakerBlock  from '@/components/SpeakerBlock';
 import AgendaBlock   from '@/components/AgendaBlock';
 import PosterBlock   from '@/components/PosterBlock';
+import HandOnBlock   from '@/components/HandOnBlock';
 import LocationBlock from '@/components/LocationBlock';
 import SponserBlock  from '@/components/SponserBlock';
 
 export default {
   components: {
-    TopBanner, ThriveBlock, TimelineBlock, SpeakerBlock, AgendaBlock, PosterBlock, LocationBlock, SponserBlock
+    TopBanner, ThriveBlock, TimelineBlock, SpeakerBlock, AgendaBlock, PosterBlock, LocationBlock, SponserBlock, HandOnBlock
   },
   data() {
     return {

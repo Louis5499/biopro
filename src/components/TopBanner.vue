@@ -10,6 +10,7 @@
           <el-dropdown-item :command="1">Speakers</el-dropdown-item>
           <el-dropdown-item :command="2">Call for Posters</el-dropdown-item>
           <el-dropdown-item :command="3">Location</el-dropdown-item>
+          <el-dropdown-item :command="4">Hand-ons Project</el-dropdown-item>
           <el-dropdown-item @click="changeRoute('fb')">Facebook</el-dropdown-item>
           <el-dropdown-item>Register</el-dropdown-item>
         </el-dropdown-menu>
@@ -19,6 +20,7 @@
         <div class="nav-option navDesktop" @click="smoothScroll(1)">Speakers</div>
         <div class="nav-option navDesktop" @click="smoothScroll(2)">Participation</div>
         <div class="nav-option navDesktop" @click="smoothScroll(3)">Location</div>
+        <div class="nav-option navDesktop" @click="smoothScroll(4)">Hand-ons Project</div>
         <div class="nav-option navDesktop" @click="changeRoute('fb')">Facebook</div>
         <div class="nav-option register" @click="changeRoute('kktix')">Register</div>
       </div>
@@ -85,6 +87,7 @@ export default {
       this.topicOffset[1] = document.querySelector('.speaker-wrapper').offsetTop;
       this.topicOffset[2] = document.querySelector('.poster-wrapper').offsetTop;
       this.topicOffset[3] = document.querySelector('.location-wrapper').offsetTop;
+      this.topicOffset[4] = document.querySelector('.hand-wrapper').offsetTop;
     }
     // Initialize first time
     calcElementHeight();
@@ -262,12 +265,12 @@ export default {
 }
 
 
-@media all and (min-width: 895px) {
+@media all and (min-width: 1100px) {
   .navMobile {
     display: none;
   }
 }
-@media all and (max-width: 895px) {
+@media all and (max-width: 1100px) {
   .navDesktop {
     display: none !important;
   }
