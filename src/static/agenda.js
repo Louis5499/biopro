@@ -38,7 +38,7 @@ export default [
         timeline: '10:50 - 11:40',
         tag: 'Invited Speaker',
         // title: `Biometric authentication, Bioinspired DSP`,
-        title: 'Invited Talk',
+        title: 'Biometrics and Medical Image Processing',
         content: `Prof. Koichi Ito, Tohoku University, Japan`,
         agendaChooseNum: 7
       },
@@ -143,7 +143,7 @@ export default [
         timeline: '14:40 - 15:00',
         tag: 'Student',
         title: `Nano Neuro Photonics`,
-        content: `Shang-Min Lin(林上民)@Nangyang Technology University, Singapore`
+        content: `Shang-Min Lin(林上民)@SiNAPSE, NUS`
       },
       {
         timeline: '15:00 - 15:20',
