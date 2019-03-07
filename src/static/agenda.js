@@ -130,7 +130,8 @@ export default [
         timeline: '13:30 - 14:20',
         tag: 'Invited Speaker',
         title: `Development of a Miniaturised, Wireless Neuromodulator Based on Experiments with Parkinsonian Rat Models`,
-        content: 'Prof. Hsin Chen@NTHU, Taiwan'
+        content: 'Prof. Hsin Chen@NTHU, Taiwan',
+        agendaChooseNum: 10
       },
       {
         timeline: '14:20 - 14:40',

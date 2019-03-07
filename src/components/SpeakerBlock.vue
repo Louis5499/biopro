@@ -143,6 +143,17 @@ export default {
           },
           pdfLink: `../static/pdf_cvs/chunhwei.pdf`,
           agendaChooseNum: 9
+        },
+        {
+          avatarUrl: '../static/avatar_hsin.jpg',
+          name: `Prof. Hsin Chen`,
+          brief: `Department of Electrical Engineering in National Tsing Hua University`,
+          link: {
+            type: 'email',
+            content: 'hchen@ee.nthu.edu.tw'
+          },
+          pdfLink: `../static/pdf_cvs/hsin.pdf`,
+          agendaChooseNum: 10
         }
       ]
     }
